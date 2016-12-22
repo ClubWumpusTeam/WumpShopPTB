@@ -31,8 +31,8 @@ function showPage() {
 </script>
 <body onload="setClocks()" style="margin:0;">
 
-<div id="loader"><img draggable=false draggable=false id="loading-bag" src="./img/bag.png">
-<img draggable=false draggable=false id="loading-icon" src="./img/loading.png">
+<div id="loader"><img draggable=false id="loading-bag" src="./img/bag.png">
+<img draggable=false id="loading-icon" src="./img/loading.png">
 <audio
   src="./bgm/loading.mp3" loop=1 id="loading" auto>
 </audio>
@@ -107,7 +107,7 @@ var snd = new Audio("bgm/select.mp3");
 		}
 		function catalogVirtual() {
 		snd.play();
-		alertify.alert("<iframe src='./catalog-virtual.html' width='99%' height='99%'></iframe>").set('resizable',true).resizeTo('83%','95%');;
+		alertify.alert("<iframe src='./catalog-virtual.html' width='99%' height='99%'></iframe>").set('startMaximized',true);;
 		}
 	</script>
 </head>
